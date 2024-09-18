@@ -1,0 +1,55 @@
+<main>
+  <!-- UI Block 1 -->
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-lg font-mono">Form with all buttons</p>
+    <button (click)="showCode('block1')" class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code 
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="block1-showcase" class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    
+  </div>
+
+  <!-- Code Section -->
+  <div id="block1-code-section" class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('block1', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block1', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block1', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="block1-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('block1-html-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block1-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>&lt;div class=&quot;...&quot;&gt;HTML hhhish ins nsd jbjd sdjsnd  Code Here&lt;div&gt;</code></pre>
+      </div>
+    
+      <div id="block1-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('block1-js-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block1-js-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>JavaScript Code Here</code></pre>
+      </div>
+    
+      <div id="block1-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('block1-script-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block1-script-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>console.log('Script Code Here');</code></pre>
+      </div>
+    </section>
+    
+  </div>
+</main>

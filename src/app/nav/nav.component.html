@@ -1,0 +1,168 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label><mat-icon class="relative top-[0.15rem] right-[0.10rem]">search</mat-icon>Search</mat-label>
+        <input matInput placeholder="Search" [formControl]="sideNavAutoComplete" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="sideNavAutoCompleteOptionSelected($event)">
+          @for (option of filteredOptions | async; track $index) {
+          <mat-option [value]="option">
+            {{ option }}
+          </mat-option>
+          }
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+
+    <mat-nav-list class="nav-list cursor-pointer">
+      <!-- Getting Started Section -->
+      <p class="font-semibold text-md">Getting Started</p>
+      <ul class="space-y-2">
+        <li>
+          <a (click)="navigateToIntroduction"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Introduction
+          </a>
+        </li>
+        <!-- <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Components
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Build Website
+          </a>
+        </li> -->
+      </ul>
+
+      <!-- Marketing Ui Section -->
+      <p class="font-semibold text-md relative top-2">Marketing Ui</p>
+      <ul class="space-y-2">
+        <li>
+          <a (click)="navigateToFooter"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Footer Section
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Hero Sections
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Grid Layouts
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Team Section
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            404 Page
+          </a>
+        </li>
+      </ul>
+
+      <!-- Ui Section -->
+      <p class="font-semibold text-md relative top-2">Application Ui</p>
+      <ul class="space-y-2">
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Cards
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Buttons
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Input
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Tables
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Headers
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+          Navbars
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Side Bars
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block px-2 py-2 rounded-lg border-l-2 border-transparent border-blue-500 hover:border-gray-500 transition duration-300 ease-in-out">
+            Alerts Bar
+          </a>
+        </li>
+      </ul>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar class="flex justify-between items-center p-4">
+      @if(isHandset$ | async){
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      }
+
+      <div>
+        <p></p>
+      </div>
+      
+      <div class="flex items-center space-x-3 w-2/5 justify-end">
+        <mat-slide-toggle [formControl]="theming"></mat-slide-toggle>
+
+        <button mat-icon-button aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+
+        <div class="flex items-center gap-2">
+          <div class="flex flex-col">
+            <label class="text-sm font-medium">Thomas Angree</label>
+            <label class="text-xs font-mono text-right">Thomas Angree</label>
+          </div>
+          <div>
+            <img src="../../assets/profile.png" alt="Ex" class="h-12 w-12 rounded-lg">
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+      
+    <main class="px-6 py-3">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

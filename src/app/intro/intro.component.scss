@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

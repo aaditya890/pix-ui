@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$indigo-palette,500);
+$my-accent: mat.define-palette(mat.$blue-palette,500);
+$my-warn:mat.define-palette(mat.$red-palette);
+
+$my-theme: mat.define-light-theme((
+  color: (
+    primary:$my-primary,
+    accent:$my-accent,
+    warn:$my-warn
+  )
+));
+
+$my-theme-dark: mat.define-dark-theme((
+  color: (
+    primary:$my-primary,
+    accent:$my-accent,
+    warn:$my-warn
+  )
+));
+
+.theme-dark{
+  @include mat.all-component-colors($my-theme-dark);
+};
+
+.theme-light{
+  @include mat.all-component-colors($my-theme);
+};
+
+:root{
+  .mdc-switch .mdc-switch__track {
+    border-radius: 0px;
+    padding: 0 33px;
+  }
+  .mdc-switch .mdc-switch__track {
+    height: 32px;
+  }
+  .mdc-switch {
+    width: 60px;
+}
+.mdc-switch .mdc-switch__track {
+  border-radius: 30px;
+}
+.mat-mdc-slide-toggle .mdc-switch--unselected .mdc-switch__handle:has(.mdc-switch__icons) {
+  margin:0 6px;
+}
+.mdc-list-item__primary-text{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+
+
