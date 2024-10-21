@@ -1,15 +1,16 @@
 <div>
-  <p class="text-4xl font-bold tracking-wide">Tailwind CSS Navbars</p>
+  <p class="text-4xl font-bold tracking-wide">Tailwind CSS Footers</p>
   <p class="text-lg font-mono tracking-tight max-w-2xl mx-auto">
     Beautifully designed, fully responsive, expertly crafted .
   </p>
 </div>
 <div class="w-full h-[0.9px] bg-gray-200 p-0"></div>
-
+<!-- Start Showing Ui Blocks -->
+<!-- Footer - 1 -->
 <main>
   <!-- UI Block 1 -->
   <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
-    <p class="relative top-4 text-lg font-mono">Footer with flexed titles and svg logo</p>
+    <p class="relative top-4 text-lg font-mono">1.Footer with flexed titles and svg logo</p>
     <button (click)="showCode('block1')"
       class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
       Code
@@ -22,102 +23,84 @@
   </div>
 
   <!-- Component Showcase Block -->
-  <div id="block1-showcase"
-    class="text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
-      <footer>
-        <div class="flex flex-col mx-3 bg-white rounded-lg">
-          <div class="w-full draggable">
-            <div class="container flex flex-col mx-auto">
-              <div class="flex flex-col items-center w-full my-20">
-                <span class="mb-8">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/018/250/338/non_2x/sharing-is-caring-text-illustration-letter-expression-for-logo-poster-or-graphic-design-element-format-png.png"
-                    width="140px">
-                </span>
-                <div class="flex flex-col items-center gap-6 mb-8">
-                  <div
-                    class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Features</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Blog</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Resources</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Partners</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Help</a>
-                    <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Terms</a>
-                  </div>
-                  <div class="flex items-center gap-8">
-                    <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <div id="block1-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <footer>
+      <div class="flex flex-col mx-3 bg-white rounded-lg">
+        <div class="w-full draggable">
+          <div class="container flex flex-col mx-auto">
+            <div class="flex flex-col items-center w-full my-20">
+              <span class="mb-8">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/018/250/338/non_2x/sharing-is-caring-text-illustration-letter-expression-for-logo-poster-or-graphic-design-element-format-png.png"
+                  width="140px">
+              </span>
+              <div class="flex flex-col items-center gap-6 mb-8">
+                <div
+                  class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">About</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Features</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Blog</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Resources</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Partners</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Help</a>
+                  <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900">Terms</a>
+                </div>
+                <div class="flex items-center gap-8">
+                  <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z"
+                        fill="currentColor" />
+                      <mask id="mask0_3320_6483" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="7" y="3"
+                        width="10" height="18">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z"
-                          fill="currentColor" />
-                        <mask id="mask0_3320_6483" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="7" y="3"
-                          width="10" height="18">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z"
-                            fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_3320_6483)">
-                        </g>
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_3320_6483)">
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z"
+                        fill="currentColor" />
+                      <mask id="mask0_3320_6484" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="4"
+                        width="19" height="16">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z"
-                          fill="currentColor" />
-                        <mask id="mask0_3320_6484" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="4"
-                          width="19" height="16">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z"
-                            fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_3320_6484)">
-                        </g>
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                          d="M12 3C7.0275 3 3 7.13211 3 12.2284C3 16.3065 5.5785 19.7648 9.15375 20.9841C9.60375 21.0709 9.76875 20.7853 9.76875 20.5403C9.76875 20.3212 9.76125 19.7405 9.7575 18.9712C7.254 19.5277 6.726 17.7332 6.726 17.7332C6.3165 16.6681 5.72475 16.3832 5.72475 16.3832C4.9095 15.8111 5.78775 15.8229 5.78775 15.8229C6.6915 15.887 7.16625 16.7737 7.16625 16.7737C7.96875 18.1847 9.273 17.777 9.7875 17.5414C9.8685 16.9443 10.1003 16.5381 10.3575 16.3073C8.35875 16.0764 6.258 15.2829 6.258 11.7471C6.258 10.7399 6.60675 9.91659 7.18425 9.27095C7.083 9.03774 6.77925 8.0994 7.263 6.82846C7.263 6.82846 8.01675 6.58116 9.738 7.77462C10.458 7.56958 11.223 7.46785 11.988 7.46315C12.753 7.46785 13.518 7.56958 14.238 7.77462C15.948 6.58116 16.7017 6.82846 16.7017 6.82846C17.1855 8.0994 16.8818 9.03774 16.7917 9.27095C17.3655 9.91659 17.7142 10.7399 17.7142 11.7471C17.7142 15.2923 15.6105 16.0725 13.608 16.2995C13.923 16.5765 14.2155 17.1423 14.2155 18.0071C14.2155 19.242 14.2043 20.2344 14.2043 20.5341C14.2043 20.7759 14.3617 21.0647 14.823 20.9723C18.4237 19.7609 21 16.3002 21 12.2284C21 7.13211 16.9703 3 12 3Z"
-                          fill="currentColor" />
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                          d="M16.2 0H1.8C0.81 0 0 0.81 0 1.8V16.2C0 17.19 0.81 18 1.8 18H16.2C17.19 18 18 17.19 18 16.2V1.8C18 0.81 17.19 0 16.2 0ZM5.4 15.3H2.7V7.2H5.4V15.3ZM4.05 5.67C3.15 5.67 2.43 4.95 2.43 4.05C2.43 3.15 3.15 2.43 4.05 2.43C4.95 2.43 5.67 3.15 5.67 4.05C5.67 4.95 4.95 5.67 4.05 5.67ZM15.3 15.3H12.6V10.53C12.6 9.81004 11.97 9.18 11.25 9.18C10.53 9.18 9.9 9.81004 9.9 10.53V15.3H7.2V7.2H9.9V8.28C10.35 7.56 11.34 7.02 12.15 7.02C13.86 7.02 15.3 8.46 15.3 10.17V15.3Z"
-                          fill="currentColor" />
-                      </svg>
-                    </a>
-                    <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_3320_6484)">
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.9996 3.00036C7.57964 3.00036 3.99964 6.58036 3.99964 11.0004C3.99964 14.7404 6.83964 17.8404 10.4196 18.6204V13.9704H8.50964V11.0004H10.4196V8.99936C10.4196 7.11936 11.5096 6.00036 13.1996 6.00036C13.9996 6.00036 14.8496 6.14036 14.8496 6.14036V8.00036H13.8696C12.8996 8.00036 12.5796 8.58036 12.5796 9.18036V11.0004H14.7696L14.4096 13.9704H12.5796V18.6204C16.1596 17.8404 18.9996 14.7404 18.9996 11.0004C18.9996 6.58036 15.4196 3.00036 11.9996 3.00036Z"
+                        fill="currentColor" />
+                      <mask id="mask0_3320_6485" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="3"
+                        width="16" height="16">
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.60063 2.18182H16.3991C19.3873 2.18182 21.8183 4.61281 21.8182 7.60074V16.3993C21.8182 19.3872 19.3873 21.8182 16.3991 21.8182H7.60063C4.6127 21.8182 2.18182 19.3873 2.18182 16.3993V7.60074C2.18182 4.61281 4.6127 2.18182 7.60063 2.18182ZM16.3993 20.0759C18.4266 20.0759 20.0761 18.4266 20.0761 16.3993H20.0759V7.60074C20.0759 5.57348 18.4265 3.92405 16.3991 3.92405H7.60063C5.57336 3.92405 3.92405 5.57348 3.92405 7.60074V16.3993C3.92405 18.4266 5.57336 20.0761 7.60063 20.0759H16.3993ZM6.85714 12.0001C6.85714 9.16424 9.16418 6.85714 12 6.85714C14.8358 6.85714 17.1429 9.16424 17.1429 12.0001C17.1429 14.8359 14.8358 17.1429 12 17.1429C9.16418 17.1429 6.85714 14.8359 6.85714 12.0001ZM8.62798 12C8.62798 13.8593 10.1407 15.3719 12 15.3719C13.8593 15.3719 15.372 13.8593 15.372 12C15.372 10.1406 13.8594 8.6279 12 8.6279C10.1406 8.6279 8.62798 10.1406 8.62798 12Z"
-                          fill="currentColor" />
-                        <mask id="mask0_3320_6487" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2"
-                          width="20" height="20">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.60063 2.18182H16.3991C19.3873 2.18182 21.8183 4.61281 21.8182 7.60074V16.3993C21.8182 19.3872 19.3873 21.8182 16.3991 21.8182H7.60063C4.6127 21.8182 2.18182 19.3873 2.18182 16.3993V7.60074C2.18182 4.61281 4.6127 2.18182 7.60063 2.18182ZM16.3993 20.0759C18.4266 20.0759 20.0761 18.4266 20.0761 16.3993H20.0759V7.60074C20.0759 5.57348 18.4265 3.92405 16.3991 3.92405H7.60063C5.57336 3.92405 3.92405 5.57348 3.92405 7.60074V16.3993C3.92405 18.4266 5.57336 20.0761 7.60063 20.0759H16.3993ZM6.85714 12.0001C6.85714 9.16424 9.16418 6.85714 12 6.85714C14.8358 6.85714 17.1429 9.16424 17.1429 12.0001C17.1429 14.8359 14.8358 17.1429 12 17.1429C9.16418 17.1429 6.85714 14.8359 6.85714 12.0001ZM8.62798 12C8.62798 13.8593 10.1407 15.3719 12 15.3719C13.8593 15.3719 15.372 13.8593 15.372 12C15.372 10.1406 13.8594 8.6279 12 8.6279C10.1406 8.6279 8.62798 10.1406 8.62798 12Z"
-                            fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_3320_6487)">
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <div class="flex items-center">
-                  <p class="text-sm text-slate-500 py-1">
-                    Tailwind CSS Component from <a class="text-slate-700 hover:text-slate-900" target="_blank">PixUi
-                      Library </a>.
-                  </p>
+                          d="M11.9996 3.00036C7.57964 3.00036 3.99964 6.58036 3.99964 11.0004C3.99964 14.7404 6.83964 17.8404 10.4196 18.6204V13.9704H8.50964V11.0004H10.4196V8.99936C10.4196 7.11936 11.5096 6.00036 13.1996 6.00036C13.9996 6.00036 14.8496 6.14036 14.8496 6.14036V8.00036H13.8696C12.8996 8.00036 12.5796 8.58036 12.5796 9.18036V11.0004H14.7696L14.4096 13.9704H12.5796V18.6204C16.1596 17.8404 18.9996 14.7404 18.9996 11.0004C18.9996 6.58036 15.4196 3.00036 11.9996 3.00036Z"
+                          fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_3320_6485)">
+                      </g>
+                    </svg>
+                  </a>
                 </div>
               </div>
+              <span class="text-sm sm:text-center">© 2024 <a href="#" class="hover:underline">PixUi™</a>. All Rights
+                Reserved.
+              </span>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </div>
 
   <!-- Code Section -->
@@ -138,8 +121,84 @@
           <button (click)="copyCode('block1-html-code-text')"
             class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
         </div>
-        <pre id="block1-html-code-text"
-          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>&lt;div class=&quot;...&quot;&gt;HTML hhhish ins nsd jbjd sdjsnd  Code Here&lt;div&gt;</code></pre>
+        <pre id="block1-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+          <code>
+            &lt;footer&gt;
+              &lt;div class=&quot;flex flex-col mx-3 bg-white rounded-lg&quot;&gt;
+                &lt;div class=&quot;w-full draggable&quot;&gt;
+                  &lt;div class=&quot;container flex flex-col mx-auto&quot;&gt;
+                    &lt;div class=&quot;flex flex-col items-center w-full my-20&quot;&gt;
+                      &lt;span class=&quot;mb-8&quot;&gt;
+                        &lt;img
+                          src=&quot;https://static.vecteezy.com/system/resources/previews/018/250/338/non_2x/sharing-is-caring-text-illustration-letter-expression-for-logo-poster-or-graphic-design-element-format-png.png&quot;
+                          width=&quot;140px&quot;&gt;
+                      &lt;/span&gt;
+                      &lt;div class=&quot;flex flex-col items-center gap-6 mb-8&quot;&gt;
+                        &lt;div class=&quot;flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900&quot;&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;About&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Features&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Blog&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Resources&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Partners&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Help&lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-gray-600 hover:text-gray-900&quot;&gt;Terms&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;flex items-center gap-8&quot;&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-grey-700 hover:text-grey-900&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                d=&quot;M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z&quot;
+                                fill=&quot;currentColor&quot; /&gt;
+                              &lt;mask id=&quot;mask0_3320_6483&quot; style=&quot;mask-type:luminance&quot; maskUnits=&quot;userSpaceOnUse&quot; x=&quot;7&quot; y=&quot;3&quot;
+                                width=&quot;10&quot; height=&quot;18&quot;&gt;
+                                &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                  d=&quot;M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z&quot;
+                                  fill=&quot;white&quot; /&gt;
+                              &lt;/mask&gt;
+                              &lt;g mask=&quot;url(#mask0_3320_6483)&quot;&gt;
+                              &lt;/g&gt;
+                            &lt;/svg&gt;
+                          &lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-grey-700 hover:text-grey-900&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                d=&quot;M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z&quot;
+                                fill=&quot;currentColor&quot; /&gt;
+                              &lt;mask id=&quot;mask0_3320_6484&quot; style=&quot;mask-type:luminance&quot; maskUnits=&quot;userSpaceOnUse&quot; x=&quot;3&quot; y=&quot;4&quot;
+                                width=&quot;19&quot; height=&quot;16&quot;&gt;
+                                &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                  d=&quot;M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z&quot;
+                                  fill=&quot;white&quot; /&gt;
+                              &lt;/mask&gt;
+                              &lt;g mask=&quot;url(#mask0_3320_6484)&quot;&gt;
+                              &lt;/g&gt;
+                            &lt;/svg&gt;
+                          &lt;/a&gt;
+                          &lt;a href=&quot;javascript:void(0)&quot; class=&quot;text-grey-700 hover:text-grey-900&quot;&gt;
+                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                d=&quot;M11.9996 3.00036C7.57964 3.00036 3.99964 6.58036 3.99964 11.0004C3.99964 14.7404 6.83964 17.8404 10.4196 18.6204V13.9704H8.50964V11.0004H10.4196V8.99936C10.4196 7.11936 11.5096 6.00036 13.1996 6.00036C13.9996 6.00036 14.8496 6.14036 14.8496 6.14036V8.00036H13.8696C12.8996 8.00036 12.5796 8.58036 12.5796 9.18036V11.0004H14.7696L14.4096 13.9704H12.5796V18.6204C16.1596 17.8404 18.9996 14.7404 18.9996 11.0004C18.9996 6.58036 15.4196 3.00036 11.9996 3.00036Z&quot;
+                                fill=&quot;currentColor&quot; /&gt;
+                              &lt;mask id=&quot;mask0_3320_6485&quot; style=&quot;mask-type:luminance&quot; maskUnits=&quot;userSpaceOnUse&quot; x=&quot;3&quot; y=&quot;3&quot;
+                                width=&quot;16&quot; height=&quot;16&quot;&gt;
+                                &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot;
+                                  d=&quot;M11.9996 3.00036C7.57964 3.00036 3.99964 6.58036 3.99964 11.0004C3.99964 14.7404 6.83964 17.8404 10.4196 18.6204V13.9704H8.50964V11.0004H10.4196V8.99936C10.4196 7.11936 11.5096 6.00036 13.1996 6.00036C13.9996 6.00036 14.8496 6.14036 14.8496 6.14036V8.00036H13.8696C12.8996 8.00036 12.5796 8.58036 12.5796 9.18036V11.0004H14.7696L14.4096 13.9704H12.5796V18.6204C16.1596 17.8404 18.9996 14.7404 18.9996 11.0004C18.9996 6.58036 15.4196 3.00036 11.9996 3.00036Z&quot;
+                                  fill=&quot;white&quot; /&gt;
+                              &lt;/mask&gt;
+                              &lt;g mask=&quot;url(#mask0_3320_6485)&quot;&gt;
+                              &lt;/g&gt;
+                            &lt;/svg&gt;
+                          &lt;/a&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;p class=&quot;text-gray-600&quot;&gt;Copyright © Sharing is Caring. All rights reserved&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/footer&gt;
+          </code>
+        </pre>
       </div>
 
       <div id="block1-js-code" class="hidden overflow-x-auto">
@@ -159,10 +218,695 @@
             class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
         </div>
         <pre id="block1-script-code-text"
-          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>{{block.lessOpen}}script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries">{{block.lessOpen}}/script{{block.greatClose}}</code></pre>
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </div>
+</main>
+<hr>
+<!-- Footer - 2 -->
+<main>
+  <!-- UI Block 2 -->
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-lg font-mono">2.Mini Content Footer With Logo</p>
+    <button (click)="showCode('block2')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="block2-showcase"
+    class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div>
+          <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-4">
+            <div class="">
+              <img src="https://i.ibb.co/sJwm271/pixui-high-resolution-logo-black-transparent.png" class="h-8 me-3"
+                alt="img" />
+              <div class="flex mt-4 top-4">
+                <a href="#" class="">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 8 19">
+                    <path fill-rule="evenodd"
+                      d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 21 16">
+                    <path
+                      d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                  </svg>
+                  <span class="sr-only">Discord community</span>
+                </a>
+                <a href="#" class="ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 17">
+                    <path fill-rule="evenodd"
+                      d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span class="sr-only">Twitter page</span>
+                </a>
+                <a href="#" class="ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+                </a>
+              </div>
+              <div class="sm:flex mt-4 sm:justify-between">
+                <span class="text-sm sm:text-center">© 2024 <a href="#" class="hover:underline">PixUi™</a>. All Rights
+                  Reserved.
+                </span>
+              </div>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold">Resources</h2>
+              <ul class="font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Pix Ui</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Tailwind CSS</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+              <ul class="font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline ">Github</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Discord</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase">Legal</h2>
+              <ul class="font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 sm:mx-auto lg:my-8" />
+      </div>
+    </footer>
+  </div>
+
+  <!-- Code Section -->
+  <div id="block2-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('block2', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block2', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block2', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="block2-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('block2-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block2-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+          <code>
+              &lt;footer&gt;
+                &lt;div class=&quot;mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8&quot;&gt;
+                  &lt;div&gt;
+                    &lt;div class=&quot;grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-4&quot;&gt;
+                      &lt;div&gt;
+                        &lt;img src=&quot;https://i.ibb.co/sJwm271/pixui-high-resolution-logo-black-transparent.png&quot; class=&quot;h-8 me-3&quot; alt=&quot;img&quot; /&gt;
+                        &lt;div class=&quot;flex mt-4 top-4&quot;&gt;
+                          &lt;a href=&quot;#&quot;&gt;
+                            &lt;svg class=&quot;w-4 h-4&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 8 19&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z&quot; clip-rule=&quot;evenodd&quot;/&gt;
+                            &lt;/svg&gt;
+                            &lt;span class=&quot;sr-only&quot;&gt;Facebook page&lt;/span&gt;
+                          &lt;/a&gt;
+                          &lt;a href=&quot;#&quot; class=&quot;ms-5&quot;&gt;
+                            &lt;svg class=&quot;w-4 h-4&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 21 16&quot;&gt;
+                              &lt;path d=&quot;M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z&quot;/&gt;
+                            &lt;/svg&gt;
+                            &lt;span class=&quot;sr-only&quot;&gt;Discord community&lt;/span&gt;
+                          &lt;/a&gt;
+                          &lt;a href=&quot;#&quot; class=&quot;ms-5&quot;&gt;
+                            &lt;svg class=&quot;w-4 h-4&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 17&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z&quot; clip-rule=&quot;evenodd&quot;/&gt;
+                            &lt;/svg&gt;
+                            &lt;span class=&quot;sr-only&quot;&gt;Twitter page&lt;/span&gt;
+                          &lt;/a&gt;
+                          &lt;a href=&quot;#&quot; class=&quot;ms-5&quot;&gt;
+                            &lt;svg class=&quot;w-4 h-4&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+                              &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z&quot; clip-rule=&quot;evenodd&quot;/&gt;
+                            &lt;/svg&gt;
+                            &lt;span class=&quot;sr-only&quot;&gt;GitHub account&lt;/span&gt;
+                          &lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;sm:flex mt-4 sm:justify-between&quot;&gt;
+                          &lt;span class=&quot;text-sm sm:text-center&quot;&gt;© 2024 &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;PixUi™&lt;/a&gt;. All Rights Reserved.&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h2 class=&quot;mb-6 text-sm font-semibold&quot;&gt;Resources&lt;/h2&gt;
+                        &lt;ul class=&quot;font-medium&quot;&gt;
+                          &lt;li class=&quot;mb-4&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Pix Ui&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Tailwind CSS&lt;/a&gt;
+                          &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h2 class=&quot;mb-6 text-sm font-semibold uppercase&quot;&gt;Follow us&lt;/h2&gt;
+                        &lt;ul class=&quot;font-medium&quot;&gt;
+                          &lt;li class=&quot;mb-4&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Github&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Discord&lt;/a&gt;
+                          &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/div&gt;
+                      &lt;div&gt;
+                        &lt;h2 class=&quot;mb-6 text-sm font-semibold uppercase&quot;&gt;Legal&lt;/h2&gt;
+                        &lt;ul class=&quot;font-medium&quot;&gt;
+                          &lt;li class=&quot;mb-4&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Privacy Policy&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;Terms &amp; Conditions&lt;/a&gt;
+                          &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;hr class=&quot;my-6 sm:mx-auto lg:my-8&quot; /&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            </code>
+      </pre>
+      </div>
+
+      <div id="block2-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('block2-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block2-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="block2-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('block2-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block2-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
       </div>
     </section>
 
   </div>
 </main>
+<hr>
+<!-- Footer - 3 -->
+<main>
+  <!-- UI Block 3 -->
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+      <p class="relative top-4 text-lg font-mono">3.Dark Modern Footer</p>
+      <button (click)="showCode('block3')"
+          class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+          Code
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+          </svg>
+      </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="block3-showcase"
+      class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <footer class="bg-black text-gray-400 py-12 px-4">
+          <div class="container mx-auto flex flex-wrap justify-between">
+            <div class="w-full sm:w-1/4 mb-6 sm:mb-0">
+              <h3 class="text-lg font-semibold text-white mb-4">Our Company</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque quam.</p>
+            </div>
+            <div class="w-full sm:w-1/4 mb-6 sm:mb-0">
+              <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+              <ul>
+                <li><a href="#" class="hover:text-white">Web Development</a></li>
+                <li><a href="#" class="hover:text-white">Mobile Development</a></li>
+                <li><a href="#" class="hover:text-white">Cloud Services</a></li>
+              </ul>
+            </div>
+            <div class="w-full sm:w-1/4 mb-6 sm:mb-0">
+              <h3 class="text-lg font-semibold text-white mb-4">Support</h3>
+              <ul>
+                <li><a href="#" class="hover:text-white">Help Center</a></li>
+                <li><a href="#" class="hover:text-white">FAQs</a></li>
+                <li><a href="#" class="hover:text-white">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="w-full sm:w-1/4">
+              <h3 class="text-lg font-semibold text-white mb-4">Subscribe</h3>
+              <input type="email" class="w-full px-4 py-2 mb-4 bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600" placeholder="Enter your email">
+              <button class="w-full bg-indigo-500 py-2 text-white font-bold hover:bg-indigo-600">Subscribe</button>
+            </div>
+          </div>
+          <div class="text-center text-gray-500 mt-8">
+          <span class="text-sm sm:text-center">© 2024 <a href="#"
+                  class="hover:underline">PixUi™</a>. All Rights Reserved.
+          </span>
+          </div>
+        </footer>
+  </div>
+
+  <!-- Code Section -->
+  <div id="block3-code-section"
+      class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <div class="flex justify-between items-center mb-6">
+          <ul class="flex gap-4">
+              <li><button mat-raised-button (click)="toggleCode('block3', 'html-code')">HTML</button></li>
+              <li><button mat-raised-button (click)="toggleCode('block3', 'js-code')">JavaScript</button></li>
+              <li><button mat-raised-button (click)="toggleCode('block3', 'script-code')">Script</button></li>
+          </ul>
+      </div>
+
+      <section id="code-box">
+          <div id="block3-html-code">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">HTML Code</h3>
+                  <button (click)="copyCode('block3-html-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block3-html-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+         <code>
+          &lt;footer class=&quot;bg-black text-gray-400 py-12 px-4&quot;&gt;
+          &lt;div class=&quot;container mx-auto flex flex-wrap justify-between&quot;&gt;
+            &lt;div class=&quot;w-full sm:w-1/4 mb-6 sm:mb-0&quot;&gt;
+              &lt;h3 class=&quot;text-lg font-semibold text-white mb-4&quot;&gt;Our Company&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque quam.&lt;/p&gt;
+            &lt;/div&gt; 
+            &lt;div class=&quot;w-full sm:w-1/4 mb-6 sm:mb-0&quot;&gt;
+              &lt;h3 class=&quot;text-lg font-semibold text-white mb-4&quot;&gt;Services&lt;/h3&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Mobile Development&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Cloud Services&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;w-full sm:w-1/4 mb-6 sm:mb-0&quot;&gt;
+              &lt;h3 class=&quot;text-lg font-semibold text-white mb-4&quot;&gt;Support&lt;/h3&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Help Center&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;w-full sm:w-1/4&quot;&gt;
+              &lt;h3 class=&quot;text-lg font-semibold text-white mb-4&quot;&gt;Subscribe&lt;/h3&gt;
+              &lt;input type=&quot;email&quot; class=&quot;w-full px-4 py-2 mb-4 bg-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600&quot; placeholder=&quot;Enter your email&quot;&gt;
+              &lt;button class=&quot;w-full bg-indigo-500 py-2 text-white font-bold hover:bg-indigo-600&quot;&gt;Subscribe&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;text-center text-gray-500 mt-8&quot;&gt;
+          &lt;span class=&quot;text-sm sm:text-center&quot;&gt;© 2024 &lt;a href=&quot;#&quot;
+                  class=&quot;hover:underline&quot;&gt;PixUi™&lt;/a&gt;. All Rights Reserved.
+          &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/footer&gt;        
+         </code>
+      </pre>
+          </div>
+
+          <div id="block3-js-code" class="hidden overflow-x-auto">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">JavaScript Code</h3>
+                  <button (click)="copyCode('block3-js-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block3-js-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+          </div>
+
+          <div id="block3-script-code" class="hidden overflow-x-auto">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">Script Code</h3>
+                  <button (click)="copyCode('block3-script-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block3-script-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+                  <code>
+                    &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+                  </code>
+                </pre>
+          </div>
+      </section>
+
+  </div>
+</main>
+<hr>
+<!-- Footer - 4 -->
+<main>
+  <!-- UI Block 4 -->
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-lg font-mono">4.Multi-Column Flexed Footer</p>
+    <button (click)="showCode('block4')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="block4-showcase"
+    class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <footer class="bg-gray-800 text-gray-300 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <!-- About Us Section -->
+          <div class="w-full md:w-1/3 mb-6">
+            <h2 class="text-xl font-bold text-white mb-4">About Us</h2>
+            <p class="text-gray-400 flex flex-col">
+              <span>We are a company providing the best services</span>
+              <span>to our customers with a unique taste integrity</span>
+              <span>and innovation.</span>
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="w-full md:w-1/3 mb-6">
+            <h2 class="text-xl font-bold text-white mb-4">Quick Links</h2>
+            <ul>
+              <li class="mb-2"><a href="#" class="hover:text-white">Home</a></li>
+              <li class="mb-2"><a href="#" class="hover:text-white">Services</a></li>
+              <li class="mb-2"><a href="#" class="hover:text-white">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Stay Connected Section -->
+          <div class="w-full md:w-1/3 mb-6">
+            <h2 class="text-xl font-bold text-white mb-4">Stay Connected</h2>
+            <div class="flex space-x-4">
+              <!-- Facebook SVG Icon -->
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M22.675 0h-21.35C.597 0 0 .598 0 1.326v21.348C0 23.402.597 24 1.326 24h11.495V14.708H9.689v-3.59h3.132V8.303c0-3.1 1.893-4.792 4.657-4.792 1.325 0 2.464.099 2.797.143v3.24h-1.919c-1.504 0-1.796.715-1.796 1.764v2.31h3.589l-.467 3.59h-3.122V24h6.116C23.402 24 24 23.402 24 22.674V1.326C24 .598 23.403 0 22.675 0z" />
+                </svg>
+              </a>
+              <!-- Twitter SVG Icon -->
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557a9.834 9.834 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.194 4.916 4.916 0 00-8.384 4.482C7.691 8.093 4.066 6.13 1.64 3.161a4.917 4.917 0 001.523 6.573 4.903 4.903 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.946 4.89a4.932 4.932 0 01-2.224.084c.628 1.959 2.445 3.384 4.604 3.423A9.867 9.867 0 010 20.29 13.94 13.94 0 007.548 22c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z" />
+                </svg>
+              </a>
+              <!-- Instagram SVG Icon -->
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.408a4.902 4.902 0 011.675 1.023c.483.483.79.996 1.023 1.675.168.46.354 1.26.408 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.408 2.43a4.902 4.902 0 01-1.023 1.675c-.483.483-.996.79-1.675 1.023-.46.168-1.26.354-2.43.408-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.408a4.902 4.902 0 01-1.675-1.023 4.902 4.902 0 01-1.023-1.675c-.168-.46-.354-1.26-.408-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.408-2.43a4.902 4.902 0 011.023-1.675c.483-.483.996-.79 1.675-1.023.46-.168 1.26-.354 2.43-.408C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.755 0 8.345.013 7.053.07 5.759.126 4.727.316 3.906.707c-.827.393-1.518.92-2.207 1.609A9.493 9.493 0 00.707 3.906C.316 4.727.126 5.759.07 7.053.013 8.345 0 8.755 0 12s.013 3.655.07 4.947c.056 1.294.246 2.326.637 3.147.393.827.92 1.518 1.609 2.207a9.493 9.493 0 002.207 1.609c.821.391 1.853.581 3.147.637 1.294.056 1.704.07 4.947.07s3.655-.013 4.947-.07c1.294-.056 2.326-.246 3.147-.637a9.493 9.493 0 002.207-1.609c.687-.687 1.215-1.378 1.609-2.207.391-.821.581-1.853.637-3.147.056-1.294.07-1.704.07-4.947s-.013-3.655-.07-4.947c-.056-1.294-.246-2.326-.637-3.147-.393-.827-.92-1.518-1.609-2.207A9.493 9.493 0 0020.094.707c-.821-.391-1.853-.581-3.147-.637C15.655.013 15.245 0 12 0z" />
+                  <path
+                    d="M12 5.838A6.163 6.163 0 005.838 12 6.163 6.163 0 0012 18.163 6.163 6.163 0 0018.163 12 6.163 6.163 0 0012 5.838zm0 10.327A4.165 4.165 0 117.835 12 4.165 4.165 0 0112 16.165zM18.406 4.594a1.44 1.44 0 11-2.882 0 1.44 1.44 0 012.882 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="text-center text-gray-500 mt-8">
+          &copy; 2024 Your Company. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Code Section -->
+  <div id="block4-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('block4', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block4', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('block4', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="block4-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('block4-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block4-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+        <code>
+&lt;footer class=&quot;bg-gray-800 text-gray-300 py-8&quot;&gt;
+  &lt;div class=&quot;container mx-auto px-4&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap justify-between&quot;&gt;
+      &lt;!-- About Us Section --&gt;
+      &lt;div class=&quot;w-full md:w-1/3 mb-6&quot;&gt;
+        &lt;h2 class=&quot;text-xl font-bold text-white mb-4&quot;&gt;About Us&lt;/h2&gt;
+        &lt;p class=&quot;text-gray-400 flex flex-col&quot;&gt;
+          &lt;span&gt;We are a company providing the best services&lt;/span&gt;
+          &lt;span&gt;to our customers with a unique taste integrity&lt;/span&gt;
+          &lt;span&gt;and innovation.&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Quick Links Section --&gt;
+      &lt;div class=&quot;w-full md:w-1/3 mb-6&quot;&gt;
+        &lt;h2 class=&quot;text-xl font-bold text-white mb-4&quot;&gt;Quick Links&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;mb-2&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;hover:text-white&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Stay Connected Section --&gt;
+      &lt;div class=&quot;w-full md:w-1/3 mb-6&quot;&gt;
+        &lt;h2 class=&quot;text-xl font-bold text-white mb-4&quot;&gt;Stay Connected&lt;/h2&gt;
+        &lt;div class=&quot;flex space-x-4&quot;&gt;
+          &lt;!-- Facebook SVG Icon --&gt;
+          &lt;a href=&quot;#&quot; class=&quot;text-gray-400 hover:text-white&quot;&gt;
+            &lt;svg class=&quot;w-6 h-6&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;
+              &lt;path d=&quot;M22.675 0h-21.35C.597 0 0 .598 0 1.326v21.348C0 23.402.597 24 1.326 24h11.495V14.708H9.689v-3.59h3.132V8.303c0-3.1 1.893-4.792 4.657-4.792 1.325 0 2.464.099 2.797.143v3.24h-1.919c-1.504 0-1.796.715-1.796 1.764v2.31h3.589l-.467 3.59h-3.122V24h6.116C23.402 24 24 23.402 24 22.674V1.326C24 .598 23.403 0 22.675 0z&quot;/&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          &lt;!-- Twitter SVG Icon --&gt;
+          &lt;a href=&quot;#&quot; class=&quot;text-gray-400 hover:text-white&quot;&gt;
+            &lt;svg class=&quot;w-6 h-6&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;
+              &lt;path d=&quot;M24 4.557a9.834 9.834 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.194 4.916 4.916 0 00-8.384 4.482C7.691 8.093 4.066 6.13 1.64 3.161a4.917 4.917 0 001.523 6.573 4.903 4.903 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.946 4.89a4.932 4.932 0 01-2.224.084c.628 1.959 2.445 3.384 4.604 3.423A9.867 9.867 0 010 20.29 13.94 13.94 0 007.548 22c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z&quot;/&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          &lt;!-- Instagram SVG Icon --&gt;
+          &lt;a href=&quot;#&quot; class=&quot;text-gray-400 hover:text-white&quot;&gt;
+            &lt;svg class=&quot;w-6 h-6&quot; fill=&quot;currentColor&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;
+              &lt;path d=&quot;M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.408a4.902 4.902 0 011.675 1.023c.483.483.79.996 1.023 1.675.168.46.354 1.26.408 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.408 2.43a4.902 4.902 0 01-1.023 1.675c-.483.483-.996.79-1.675 1.023-.46.168-1.26.354-2.43.408-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.408a4.902 4.902 0 01-1.675-1.023 4.902 4.902 0 01-1.023-1.675c-.168-.46-.354-1.26-.408-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.408-2.43a4.902 4.902 0 011.023-1.675c.483-.483.996-.79 1.675-1.023.46-.168 1.26-.354 2.43-.408C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.755 0 8.345.013 7.053.07 5.759.126 4.727.316 3.906.707c-.827.393-1.518.92-2.207 1.609A9.493 9.493 0 00.707 3.906C.316 4.727.126 5.759.07 7.053.013 8.345 0 8.755 0 12s.013 3.655.07 4.947c.056 1.294.246 2.326.637 3.147.393.827.92 1.518 1.609 2.207a9.493 9.493 0 002.207 1.609c.821.391 1.853.581 3.147.637 1.294.056 1.704.07 4.947.07s3.655-.013 4.947-.07c1.294-.056 2.326-.246 3.147-.637a9.493 9.493 0 002.207-1.609c.687-.687 1.215-1.378 1.609-2.207.391-.821.581-1.853.637-3.147.056-1.294.07-1.704.07-4.947s-.013-3.655-.07-4.947c-.056-1.294-.246-2.326-.637-3.147-.393-.827-.92-1.518-1.609-2.207A9.493 9.493 0 0020.094.707c-.821-.391-1.853-.581-3.147-.637C15.655.013 15.245 0 12 0z&quot;/&gt;
+              &lt;path d=&quot;M12 5.838A6.163 6.163 0 005.838 12 6.163 6.163 0 0012 18.163 6.163 6.163 0 0018.163 12 6.163 6.163 0 0012 5.838zm0 10.327A4.165 4.165 0 117.835 12 4.165 4.165 0 0112 16.165zM18.406 4.594a1.44 1.44 0 11-2.882 0 1.44 1.44 0 012.882 0z&quot;/&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Footer Bottom --&gt;
+    &lt;div class=&quot;text-center text-gray-500 mt-8&quot;&gt;
+      &amp;copy; 2024 Your Company. All Rights Reserved.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+        </code>
+      </pre>
+      </div>
+
+      <div id="block4-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('block4-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block4-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="block4-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('block4-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="block4-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+      </pre>
+      </div>
+    </section>
+
+  </div>
+</main>
+<hr>
+<!-- Footer - 5 -->
+<main>
+  <!-- UI Block 5 -->
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+      <p class="relative top-4 text-lg font-mono">5.Simple Row Flexed Footer</p>
+      <button (click)="showCode('block5')"
+          class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+          Code
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+          </svg>
+      </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="block5-showcase"
+      class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <footer class="bg-gradient-to-r from-blue-800 to-purple-600 text-white py-8">
+          <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+              <!-- Logo Section -->
+              <div
+                  class="flex bg-gradient-to-l to-purple-400 from-blue-500 items-center justify-center mr-2 p-2 rounded-md">
+                  <img src="https://i.ibb.co/sJwm271/pixui-high-resolution-logo-black-transparent.png"
+                      class="h-8 me-3" alt="img" />
+              </div>
+
+              <!-- Links Section -->
+              <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                  <a href="#" class="hover:text-yellow-300 transition duration-200">Home</a>
+                  <a href="#" class="hover:text-yellow-300 transition duration-200">Services</a>
+                  <a href="#" class="hover:text-yellow-300 transition duration-200">Portfolio</a>
+                  <a href="#" class="hover:text-yellow-300 transition duration-200">Contact</a>
+              </div>
+
+              <!-- Copyright Notice -->
+              <span class="text-sm sm:text-center">© 2024 <a href="#" class="hover:underline">PixUi™</a> All Rights
+                  Reserved.
+              </span>
+          </div>
+      </footer>
+  </div>
+
+  <!-- Code Section -->
+  <div id="block5-code-section"
+      class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <div class="flex justify-between items-center mb-6">
+          <ul class="flex gap-4">
+              <li><button mat-raised-button (click)="toggleCode('block5', 'html-code')">HTML</button></li>
+              <li><button mat-raised-button (click)="toggleCode('block5', 'js-code')">JavaScript</button></li>
+              <li><button mat-raised-button (click)="toggleCode('block5', 'script-code')">Script</button></li>
+          </ul>
+      </div>
+
+      <section id="code-box">
+          <div id="block5-html-code">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">HTML Code</h3>
+                  <button (click)="copyCode('block5-html-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block5-html-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+        <code>
+&lt;footer class=&quot;bg-gradient-to-r from-blue-800 to-purple-600 text-white py-8&quot;&gt;
+  &lt;div class=&quot;container mx-auto px-4 flex flex-col md:flex-row items-center justify-between&quot;&gt;
+      &lt;!-- Logo Section --&gt;
+      &lt;div class=&quot;flex bg-gradient-to-l to-purple-400 from-blue-500 items-center justify-center mr-2 p-2 rounded-md&quot;&gt;
+          &lt;img src=&quot;https://i.ibb.co/sJwm271/pixui-high-resolution-logo-black-transparent.png&quot; class=&quot;h-8 me-3&quot;
+              alt=&quot;img&quot; /&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Links Section --&gt;
+      &lt;div class=&quot;flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hover:text-yellow-300 transition duration-200&quot;&gt;Home&lt;/a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hover:text-yellow-300 transition duration-200&quot;&gt;Services&lt;/a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hover:text-yellow-300 transition duration-200&quot;&gt;Portfolio&lt;/a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hover:text-yellow-300 transition duration-200&quot;&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Copyright Notice --&gt;
+      &lt;span class=&quot;text-sm sm:text-center&quot;&gt;© 2024 &lt;a href=&quot;#&quot; class=&quot;hover:underline&quot;&gt;PixUi™&lt;/a&gt; All Rights Reserved.
+      &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+        </code>
+      </pre>
+          </div>
+
+          <div id="block5-js-code" class="hidden overflow-x-auto">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">JavaScript Code</h3>
+                  <button (click)="copyCode('block5-js-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block5-js-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+          </div>
+
+          <div id="block5-script-code" class="hidden overflow-x-auto">
+              <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-lg font-bold">Script Code</h3>
+                  <button (click)="copyCode('block5-script-code-text')"
+                      class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+              </div>
+              <pre id="block5-script-code-text"
+                  class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+      </pre>
+          </div>
+      </section>
+  </div>
+</main>
 <!-- Repeat for other UI blocks by changing 'block1' to 'block2', 'block3', etc. -->
+ 

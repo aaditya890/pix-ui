@@ -1,0 +1,752 @@
+<div>
+  <p class="text-4xl font-bold tracking-wide">Tailwind CSS Hero-Section</p>
+  <p class="text-lg font-mono tracking-tight max-w-2xl mx-auto">
+    Beautifully designed, fully responsive, expertly crafted .
+  </p>
+</div>
+ <!-- UI Block 1 -->
+ <main>
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-2xl font-mono">1.Business Solutions Hero Section</p>
+    <button (click)="showCode('hero4')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="hero4-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <section class="bg-gradient-to-br bg-[#121928] text-gray-200">
+      <div class="flex justify-between container lg:px-20 mx-auto p-6 flex-col lg:flex-row">
+        <!-- Left Side -->
+        <div class="space-y-5">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_23-2149255390.jpg?t=st=1729360664~exp=1729364264~hmac=48052644386f5e3235b92faa55125ba8f1722102e5e7d3622c683a32a158776d&w=996" class="w-[26rem] rounded-sm object-cover h-52" alt="#">
+          <span
+            class="inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-blue-600 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300">
+            <svg aria-hidden="true" class="h-4 w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Text Here
+          </span>
+          <p class="font-extrabold text-3xl flex flex-col">Lorem ipsum dolor sit amet <a class="hover:underline">consectetur
+              Elit.</a></p>
+          <div class="flex items-center space-x-3">
+            <img class="h-10 w-10 rounded-full"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png" alt="Michael Gough">
+            <div>
+              <div class="text-md font-semibold">Michael Gough</div>
+              <div class="text-sm">Posted on Jan 31</div>
+            </div>
+          </div>
+          <p class="text-gray-600 flex flex-col">One of the things I always loved about the web is its immediacy. <a
+              class="hover:underline">You write a piece of code, publish it somewhere and people can access it.</a></p>
+          <a href="#" class="text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg">
+            Learn More
+            <svg aria-hidden="true" class="relative w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="bg-gray-300 my-4 h-[2px] w-full block md:hidden">
+    
+        </div>
+        <!-- Right Side -->
+        <div class="flex flex-col space-y-6 w-full lg:w-1/2">
+          <div class="space-y-4">
+            <span
+              class="inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-pink-600 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300">
+              <svg aria-hidden="true" class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Voice Note
+            </span>
+            <h2 class="text-2xl font-bold">Engage with Our Content</h2>
+            <hr class="border-t-2 border-blue-400 w-1/4 mb-4">
+            <p class="text-gray-300 leading-relaxed max-w-md">
+              Discover insights and tips on how to maximize your potential. Join our community of learners and professionals
+              to explore new opportunities.
+            </p>
+            <a href="#" class="text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg">
+              Learn More
+              <svg aria-hidden="true" class="relative w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+    
+          <div class="space-y-4">
+            <span
+              class="inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-green-800 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300">
+              <svg aria-hidden="true" class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Marketing
+            </span>
+            <h2 class="text-2xl font-bold">Explore New Possibilities</h2>
+            <hr class="border-t-2 border-blue-400 w-1/4 mb-4">
+            <p class="text-gray-300 leading-relaxed max-w-md">
+              Gain valuable knowledge and tools to empower your growth. Connect with experts in various fields for
+              insightful discussions.
+            </p>
+            <a href="#" class="text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg">
+              Learn More
+              <svg aria-hidden="true" class="relative w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Code Section -->
+  <div id="hero4-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('hero4', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero4', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero4', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="hero4-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('hero4-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero4-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+            <code>
+        &lt;section class=&quot;bg-gradient-to-br bg-[#121928] text-gray-200&quot;&gt;
+              &lt;div class=&quot;flex justify-between container lg:px-20 mx-auto p-6 flex-col lg:flex-row&quot;&gt;
+                &lt;!-- Left Side --&gt;
+                &lt;div class=&quot;space-y-5&quot;&gt;
+                  &lt;img src=&quot;https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_23-2149255390.jpg?t=st=1729360664~exp=1729364264~hmac=48052644386f5e3235b92faa55125ba8f1722102e5e7d3622c683a32a158776d&amp;w=996&quot; class=&quot;w-[26rem] rounded-sm object-cover h-52&quot; alt=&quot;#&quot;&gt;
+                  &lt;span
+                    class=&quot;inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-blue-600 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300&quot;&gt;
+                    &lt;svg aria-hidden=&quot;true&quot; class=&quot;h-4 w-4 mr-1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;
+                      fill=&quot;currentColor&quot;&gt;
+                      &lt;path fill-rule=&quot;evenodd&quot;
+                        d=&quot;M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z&quot;
+                        clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                    Text Here
+                  &lt;/span&gt;
+                  &lt;p class=&quot;font-extrabold text-3xl flex flex-col&quot;&gt;Lorem ipsum dolor sit amet &lt;a class=&quot;hover:underline&quot;&gt;consectetur
+                      Elit.&lt;/a&gt;&lt;/p&gt;
+                  &lt;div class=&quot;flex items-center space-x-3&quot;&gt;
+                    &lt;img class=&quot;h-10 w-10 rounded-full&quot;
+                      src=&quot;https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png&quot; alt=&quot;Michael Gough&quot;&gt;
+                    &lt;div&gt;
+                      &lt;div class=&quot;text-md font-semibold&quot;&gt;Michael Gough&lt;/div&gt;
+                      &lt;div class=&quot;text-sm&quot;&gt;Posted on Jan 31&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;text-gray-600 flex flex-col&quot;&gt;One of the things I always loved about the web is its immediacy. &lt;a
+                      class=&quot;hover:underline&quot;&gt;You write a piece of code, publish it somewhere and people can access it.&lt;/a&gt;&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg&quot;&gt;
+                    Learn More
+                    &lt;svg aria-hidden=&quot;true&quot; class=&quot;relative w-5 ml-2&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                      &lt;path fill-rule=&quot;evenodd&quot;
+                        d=&quot;M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z&quot;
+                        clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                    &lt;/svg&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;bg-gray-300 my-4 h-[2px] w-full block md:hidden&quot;&gt;
+            
+                &lt;/div&gt;
+                &lt;!-- Right Side --&gt;
+                &lt;div class=&quot;flex flex-col space-y-6 w-full lg:w-1/2&quot;&gt;
+                  &lt;div class=&quot;space-y-4&quot;&gt;
+                    &lt;span
+                      class=&quot;inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-pink-600 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300&quot;&gt;
+                      &lt;svg aria-hidden=&quot;true&quot; class=&quot;w-5 mr-1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;
+                        fill=&quot;currentColor&quot;&gt;
+                        &lt;path fill-rule=&quot;evenodd&quot;
+                          d=&quot;M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z&quot;
+                          clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      Voice Note
+                    &lt;/span&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold&quot;&gt;Engage with Our Content&lt;/h2&gt;
+                    &lt;hr class=&quot;border-t-2 border-blue-400 w-1/4 mb-4&quot;&gt;
+                    &lt;p class=&quot;text-gray-300 leading-relaxed max-w-md&quot;&gt;
+                      Discover insights and tips on how to maximize your potential. Join our community of learners and professionals
+                      to explore new opportunities.
+                    &lt;/p&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg&quot;&gt;
+                      Learn More
+                      &lt;svg aria-hidden=&quot;true&quot; class=&quot;relative w-5 ml-2&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;
+                        xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                        &lt;path fill-rule=&quot;evenodd&quot;
+                          d=&quot;M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z&quot;
+                          clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+            
+                  &lt;div class=&quot;space-y-4&quot;&gt;
+                    &lt;span
+                      class=&quot;inline-flex items-center px-3 py-1 text-sm font-medium text-primary-800 bg-green-800 rounded-sm shadow-md dark:bg-primary-900 dark:text-primary-300&quot;&gt;
+                      &lt;svg aria-hidden=&quot;true&quot; class=&quot;w-5 mr-1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;
+                        fill=&quot;currentColor&quot;&gt;
+                        &lt;path fill-rule=&quot;evenodd&quot;
+                          d=&quot;M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z&quot;
+                          clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      Security Tips
+                    &lt;/span&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold&quot;&gt;Stay Safe Online&lt;/h2&gt;
+                    &lt;hr class=&quot;border-t-2 border-green-400 w-1/4 mb-4&quot;&gt;
+                    &lt;p class=&quot;text-gray-300 leading-relaxed max-w-md&quot;&gt;
+                      Protect your personal information and stay informed about the latest trends in online security. Your safety is
+                      our priority.
+                    &lt;/p&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;text-blue-500 inline-flex items-center mt-2 text-sm font-medium rounded-lg&quot;&gt;
+                      Learn More
+                      &lt;svg aria-hidden=&quot;true&quot; class=&quot;relative w-5 ml-2&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;
+                        xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                        &lt;path fill-rule=&quot;evenodd&quot;
+                          d=&quot;M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z&quot;
+                          clip-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+            
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/section&gt;            
+            </code>
+        </pre>
+      </div>
+
+      <div id="hero4-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('hero4-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero4-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="hero4-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('hero4-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero4-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- UI Block 2 -->
+<main>
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-2xl font-mono">2.Hero Section with Floating Cards</p>
+    <button (click)="showCode('hero2')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="hero2-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <section class="relative min-h-[60vh] bg-cover bg-center pt-4 px-4" style="background-image: url('https://as2.ftcdn.net/v2/jpg/08/98/16/03/1000_F_898160345_MGV5buFy8AVmgLqmJCwE8RUyPUTwa7zV.jpg');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    
+      <div class="container mx-auto h-full flex items-center justify-center relative z-10">
+        <div class="text-center text-white">
+          <h1 class="text-6xl font-extrabold mb-6">Explore the Future</h1>
+          <p class="text-lg mb-10">Step into tomorrow with the most advanced technologies today.</p>
+    
+          <!-- Floating Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3">
+              <h2 class="text-2xl font-bold text-gray-800">Innovate</h2>
+              <p class="mt-2 text-gray-600">Bring your ideas to life with the latest tools.</p>
+            </div>
+            <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3">
+              <h2 class="text-2xl font-bold text-gray-800">Design</h2>
+              <p class="mt-2 text-gray-600">Create stunning visual experiences for your users.</p>
+            </div>
+            <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3">
+              <h2 class="text-2xl font-bold text-gray-800">Develop</h2>
+              <p class="mt-2 text-gray-600">Build scalable applications with modern frameworks.</p>
+            </div>
+          </div>
+    
+          <div class="mt-4 sm:mt-8">
+            <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-lg transition transform hover:scale-105 hover:bg-blue-600">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+  </div>
+
+  <!-- Code Section -->
+  <div id="hero2-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('hero2', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero2', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero2', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="hero2-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('hero2-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero2-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+          <code>
+          &lt;section class=&quot;relative min-h-[60vh] bg-cover bg-center pt-4 px-4&quot; style=&quot;background-image: url(&#39;https://as2.ftcdn.net/v2/jpg/08/98/16/03/1000_F_898160345_MGV5buFy8AVmgLqmJCwE8RUyPUTwa7zV.jpg&#39;);&quot;&gt;
+            &lt;div class=&quot;absolute inset-0 bg-black bg-opacity-50&quot;&gt;&lt;/div&gt;
+          
+            &lt;div class=&quot;container mx-auto h-full flex items-center justify-center relative z-10&quot;&gt;
+              &lt;div class=&quot;text-center text-white&quot;&gt;
+                &lt;h1 class=&quot;text-6xl font-extrabold mb-6&quot;&gt;Explore the Future&lt;/h1&gt;
+                &lt;p class=&quot;text-lg mb-10&quot;&gt;Step into tomorrow with the most advanced technologies today.&lt;/p&gt;
+          
+                &lt;!-- Floating Cards --&gt;
+                &lt;div class=&quot;grid grid-cols-1 md:grid-cols-3 gap-6&quot;&gt;
+                  &lt;div class=&quot;bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3&quot;&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold text-gray-800&quot;&gt;Innovate&lt;/h2&gt;
+                    &lt;p class=&quot;mt-2 text-gray-600&quot;&gt;Bring your ideas to life with the latest tools.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3&quot;&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold text-gray-800&quot;&gt;Design&lt;/h2&gt;
+                    &lt;p class=&quot;mt-2 text-gray-600&quot;&gt;Create stunning visual experiences for your users.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;bg-white bg-opacity-80 rounded-lg shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-3&quot;&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold text-gray-800&quot;&gt;Develop&lt;/h2&gt;
+                    &lt;p class=&quot;mt-2 text-gray-600&quot;&gt;Build scalable applications with modern frameworks.&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+          
+                &lt;div class=&quot;mt-4 sm:mt-8&quot;&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;bg-blue-500 text-white px-6 py-3 rounded-lg transition transform hover:scale-105 hover:bg-blue-600&quot;&gt;
+                    Get Started
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;         
+          </code>
+        </pre>
+      </div>
+
+      <div id="hero2-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('hero2-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero2-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="hero2-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('her21-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero2-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- UI Block 3 -->
+<main>
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-2xl font-mono">3.Hero Section With Form Inputs</p>
+    <button (click)="showCode('hero3')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="hero3-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <section class="bg-gradient-to-r from-blue-50 to-blue-100 py-16 lg:py-24">
+      <div class="container mx-auto px-4 lg:px-16 flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
+        
+        <!-- Left Side: Text and Countable Cards -->
+        <div class="w-full lg:w-1/2 space-y-8">
+          <span class="text-4xl lg:text-6xl font-extrabold text-gray-800">Achieve WithUs</span>
+          <p class="text-lg lg:text-xl text-gray-600 leading-relaxed">
+            Join us in delivering innovative solutions. Let’s help your business grow with our expertise and professionalism.
+          </p>
+          
+          <!-- Countable Cards with Hover Effect -->
+          <div class="flex space-x-4 mt-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3">
+              <h2 class="text-4xl font-extrabold text-blue-600" id="count1">120+</h2>
+              <p class="text-sm text-gray-600">Projects Completed</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3">
+              <h2 class="text-4xl font-extrabold text-blue-600" id="count2">75+</h2>
+              <p class="text-sm text-gray-600">Global Clients</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3">
+              <h2 class="text-4xl font-extrabold text-blue-600" id="count3">50+</h2>
+              <p class="text-sm text-gray-600">Awards Won</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Side: Form with Enhanced Design -->
+        <div class="ml-4 w-full lg:w-1/2 bg-white p-6 lg:p-10 rounded-xl shadow-xl transform transition duration-300 hover:scale-105">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-600">Your Name</label>
+                <input type="text" id="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-600">Your Email</label>
+                <input type="email" id="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="john@example.com">
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-600">Message</label>
+              <textarea id="message" rows="4" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 transition duration-300">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Code Section -->
+  <div id="hero3-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('hero3', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero3', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero3', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="hero3-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('hero3-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero3-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+          <code>
+        &lt;section class=&quot;bg-gradient-to-r from-blue-50 to-blue-100 py-16 lg:py-24&quot;&gt;
+            &lt;div class=&quot;container mx-auto px-4 lg:px-16 flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0&quot;&gt;
+              
+              &lt;!-- Left Side: Text and Countable Cards --&gt;
+              &lt;div class=&quot;w-full lg:w-1/2 space-y-8&quot;&gt;
+                &lt;span class=&quot;text-4xl lg:text-6xl font-extrabold text-gray-800&quot;&gt;Achieve WithUs&lt;/span&gt;
+                &lt;p class=&quot;text-lg lg:text-xl text-gray-600 leading-relaxed&quot;&gt;
+                  Join us in delivering innovative solutions. Let’s help your business grow with our expertise and professionalism.
+                &lt;/p&gt;
+                
+                &lt;!-- Countable Cards with Hover Effect --&gt;
+                &lt;div class=&quot;flex space-x-4 mt-8&quot;&gt;
+                  &lt;!-- Card 1 --&gt;
+                  &lt;div class=&quot;bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3&quot;&gt;
+                    &lt;h2 class=&quot;text-4xl font-extrabold text-blue-600&quot; id=&quot;count1&quot;&gt;120+&lt;/h2&gt;
+                    &lt;p class=&quot;text-sm text-gray-600&quot;&gt;Projects Completed&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;!-- Card 2 --&gt;
+                  &lt;div class=&quot;bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3&quot;&gt;
+                    &lt;h2 class=&quot;text-4xl font-extrabold text-blue-600&quot; id=&quot;count2&quot;&gt;75+&lt;/h2&gt;
+                    &lt;p class=&quot;text-sm text-gray-600&quot;&gt;Global Clients&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;!-- Card 3 --&gt;
+                  &lt;div class=&quot;bg-white p-6 text-center rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-1/3&quot;&gt;
+                    &lt;h2 class=&quot;text-4xl font-extrabold text-blue-600&quot; id=&quot;count3&quot;&gt;50+&lt;/h2&gt;
+                    &lt;p class=&quot;text-sm text-gray-600&quot;&gt;Awards Won&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          
+              &lt;!-- Right Side: Form with Enhanced Design --&gt;
+              &lt;div class=&quot;ml-4 w-full lg:w-1/2 bg-white p-6 lg:p-10 rounded-xl shadow-xl transform transition duration-300 hover:scale-105&quot;&gt;
+                &lt;h2 class=&quot;text-3xl font-bold text-gray-800 mb-6&quot;&gt;Contact Us&lt;/h2&gt;
+                &lt;form class=&quot;space-y-6&quot;&gt;
+                  &lt;div class=&quot;grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-6&quot;&gt;
+                    &lt;div&gt;
+                      &lt;label for=&quot;name&quot; class=&quot;block text-sm font-medium text-gray-600&quot;&gt;Your Name&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; id=&quot;name&quot; class=&quot;mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500&quot; placeholder=&quot;John Doe&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt;
+                      &lt;label for=&quot;email&quot; class=&quot;block text-sm font-medium text-gray-600&quot;&gt;Your Email&lt;/label&gt;
+                      &lt;input type=&quot;email&quot; id=&quot;email&quot; class=&quot;mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500&quot; placeholder=&quot;johnexample.com&quot;&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;label for=&quot;message&quot; class=&quot;block text-sm font-medium text-gray-600&quot;&gt;Message&lt;/label&gt;
+                    &lt;textarea id=&quot;message&quot; rows=&quot;4&quot; class=&quot;mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500&quot; placeholder=&quot;Your message...&quot;&gt;&lt;/textarea&gt;
+                  &lt;/div&gt;
+                  &lt;button type=&quot;submit&quot; class=&quot;w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 transition duration-300&quot;&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;
+          
+          </code>
+        </pre>
+      </div>
+
+      <div id="hero3-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('hero3-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero3-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="hero3-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('hero3-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero3-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- UI Block 4 -->
+<main>
+  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+    <p class="relative top-4 text-2xl font-mono">4.Gradient Touched Hero Section</p>
+    <button (click)="showCode('hero1')"
+      class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+      Code
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        aria-hidden="true" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Component Showcase Block -->
+  <div id="hero1-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <section class="relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
+          <!-- Background Image -->
+          <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('https://source.unsplash.com/random/1920x1080');"></div>
+        
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black opacity-60"></div>
+        
+          <!-- Hero Content -->
+          <div class="relative z-10 container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+              <!-- Left Side Content -->
+              <div class="space-y-6 text-center lg:text-left">
+                <h1 class="text-5xl font-extrabold tracking-tight leading-tight sm:text-6xl lg:text-7xl">
+                  Unlock Your Business Potential
+                </h1>
+                <p class="text-lg font-light text-gray-200 max-w-lg mx-auto lg:mx-0">
+                  Take your business to new heights with cutting-edge technology, data-driven strategies, and exceptional solutions designed to grow your brand.
+                </p>
+                <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+                  <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-indigo-500 hover:bg-indigo-700 text-white font-medium rounded-lg">
+                    Get Started
+                    <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 2a8 8 0 110 16 8 8 0 010-16zm1.293 10.707a1 1 0 010-1.414L13.586 10H7a1 1 0 010-2h6.586l-2.293-2.293a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-gray-200 hover:bg-gray-100 text-gray-200 font-medium rounded-lg">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+        
+              <!-- Right Side Image -->
+              <div class="mt-10 lg:mt-0 flex justify-center lg:justify-end">
+                  <img src="https://static.vecteezy.com/system/resources/previews/029/726/219/large_2x/3d-purple-illustration-icon-of-working-on-a-business-job-with-hand-gesture-for-ui-ux-social-media-ads-design-free-png.png" alt="Professional GIF" class="rounded-lg shadow-sm">     
+              </div>
+            </div>
+          </div>
+        
+          <!-- Floating Decorative Circles -->
+          <div class="absolute top-0 right-0 transform translate-x-10 -translate-y-10">
+            <div class="w-32 h-32 bg-indigo-500 rounded-full opacity-30"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 transform -translate-x-10 translate-y-10">
+            <div class="w-24 h-24 bg-blue-600 rounded-full opacity-30"></div>
+          </div>
+        </section>
+  </div>
+
+  <!-- Code Section -->
+  <div id="hero1-code-section"
+    class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+    <div class="flex justify-between items-center mb-6">
+      <ul class="flex gap-4">
+        <li><button mat-raised-button (click)="toggleCode('hero1', 'html-code')">HTML</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero1', 'js-code')">JavaScript</button></li>
+        <li><button mat-raised-button (click)="toggleCode('hero1', 'script-code')">Script</button></li>
+      </ul>
+    </div>
+
+    <section id="code-box">
+      <div id="hero1-html-code">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">HTML Code</h3>
+          <button (click)="copyCode('hero1-html-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero1-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+          <code>
+          &lt;section class=&quot;relative bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16&quot;&gt;
+            &lt;!-- Background Image --&gt;
+            &lt;div class=&quot;absolute inset-0 bg-cover bg-center opacity-50&quot; style=&quot;background-image: url(&#39;https://source.unsplash.com/random/1920x1080&#39;);&quot;&gt;&lt;/div&gt;
+          
+            &lt;!-- Gradient Overlay --&gt;
+            &lt;div class=&quot;absolute inset-0 bg-gradient-to-t from-black opacity-60&quot;&gt;&lt;/div&gt;
+          
+            &lt;!-- Hero Content --&gt;
+            &lt;div class=&quot;relative z-10 container mx-auto px-4&quot;&gt;
+              &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 items-center&quot;&gt;
+                &lt;!-- Left Side Content --&gt;
+                &lt;div class=&quot;space-y-6 text-center lg:text-left&quot;&gt;
+                  &lt;h1 class=&quot;text-5xl font-extrabold tracking-tight leading-tight sm:text-6xl lg:text-7xl&quot;&gt;
+                    Unlock Your Business Potential
+                  &lt;/h1&gt;
+                  &lt;p class=&quot;text-lg font-light text-gray-200 max-w-lg mx-auto lg:mx-0&quot;&gt;
+                    Take your business to new heights with cutting-edge technology, data-driven strategies, and exceptional solutions designed to grow your brand.
+                  &lt;/p&gt;
+                  &lt;div class=&quot;mt-8 flex justify-center lg:justify-start space-x-4&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;inline-flex items-center justify-center px-6 py-3 bg-indigo-500 hover:bg-indigo-700 text-white font-medium rounded-lg&quot;&gt;
+                      Get Started
+                      &lt;svg class=&quot;ml-2 w-5 h-5&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+                        &lt;path d=&quot;M10 2a8 8 0 110 16 8 8 0 010-16zm1.293 10.707a1 1 0 010-1.414L13.586 10H7a1 1 0 010-2h6.586l-2.293-2.293a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z&quot; /&gt;
+                      &lt;/svg&gt;
+                    &lt;/a&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;inline-flex items-center justify-center px-6 py-3 border border-gray-200 hover:bg-gray-100 text-gray-200 font-medium rounded-lg&quot;&gt;
+                      Learn More
+                    &lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+          
+                &lt;!-- Right Side Image --&gt;
+                &lt;div class=&quot;mt-10 lg:mt-0 flex justify-center lg:justify-end&quot;&gt;
+                  &lt;img src=&quot;https://static.vecteezy.com/system/resources/previews/029/726/219/large_2x/3d-purple-illustration-icon-of-working-on-a-business-job-with-hand-gesture-for-ui-ux-social-media-ads-design-free-png.png&quot; alt=&quot;Professional GIF&quot; class=&quot;rounded-lg shadow-sm&quot;&gt;     
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          
+            &lt;!-- Floating Decorative Circles --&gt;
+            &lt;div class=&quot;absolute top-0 right-0 transform translate-x-10 -translate-y-10&quot;&gt;
+              &lt;div class=&quot;w-32 h-32 bg-indigo-500 rounded-full opacity-30&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;absolute bottom-0 left-0 transform -translate-x-10 translate-y-10&quot;&gt;
+              &lt;div class=&quot;w-24 h-24 bg-blue-600 rounded-full opacity-30&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/section&gt;            
+          </code>
+        </pre>
+      </div>
+
+      <div id="hero1-js-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">JavaScript Code</h3>
+          <button (click)="copyCode('hero1-js-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero1-js-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+      </div>
+
+      <div id="hero1-script-code" class="hidden overflow-x-auto">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-lg font-bold">Script Code</h3>
+          <button (click)="copyCode('hero1-script-code-text')"
+            class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+        </div>
+        <pre id="hero1-script-code-text"
+          class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+          <code>
+            &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+
+
+
