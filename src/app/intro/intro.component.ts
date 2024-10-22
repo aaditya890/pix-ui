@@ -12,5 +12,17 @@ import { UiServiceService } from '../service/ui-service.service';
   styleUrl: './intro.component.scss'
 })
 export class IntroComponent {
+  private uiService = inject(UiServiceService)
+
+  showCode(blockId: string) {
+    this.uiService.serviceShowCode(blockId)
+  }
   
+  toggleCode(blockId: string, codeType: string) {
+   this.uiService.serviceToggleCode(blockId, codeType)
+  }
+  
+  copyCode(id: string) {
+   this.uiService.serviceCopyCode(id);
+  }
 }

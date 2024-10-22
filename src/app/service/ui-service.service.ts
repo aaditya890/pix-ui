@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UiServiceService {
-
+  constructor(public snack_bar:MatSnackBar){}
   public serviceShowCode(blockId:string):void{
     const showcase = document.getElementById(`${blockId}-showcase`);
     const codeSection = document.getElementById(`${blockId}-code-section`);
@@ -48,10 +49,11 @@ export class UiServiceService {
     const codeText = codeElement?.innerText || '';
   
     navigator.clipboard.writeText(codeText).then(() => {
-      alert('Code copied to clipboard!');
+      this.snack_bar.open('Code copied to clipboard ✅','Dismiss',{
+        duration:2000
+      })
     }).catch((err) => {
       console.error('Failed to copy code: ', err);
     });
   }
-  
 }

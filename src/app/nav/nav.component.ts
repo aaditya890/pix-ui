@@ -1,4 +1,4 @@
-import { Component, Host, HostBinding, inject, OnInit } from '@angular/core';
+import { Component, Host, HostBinding, inject, Input, numberAttribute, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { AsyncPipe } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { Router, RouterLink, RouterOutlet ,RouterModule } from '@angular/router';
 import { OUR_ROUTES } from '../routes/define-routes';
+import { _isNumberValue } from '@angular/cdk/coercion';
 
 @Component({
   selector: 'app-nav',
@@ -44,6 +45,7 @@ import { OUR_ROUTES } from '../routes/define-routes';
 })
 
 export class NavComponent implements OnInit {
+  @Input({transform:numberAttribute}) dummy = ""
   private breakpointObserver = inject(BreakpointObserver);
   private overlay = inject(OverlayContainer);
   constructor(private router:Router){}
@@ -82,6 +84,8 @@ export class NavComponent implements OnInit {
       startWith(''),
       map(value => this._filter(value || ''))
     );
+    console.log(this.dummy);
+    
 
     this.theming.valueChanges.subscribe((darkMode: any) => {
       this.className = darkMode ? this.darkClassName : this.lightClassName;
@@ -111,6 +115,12 @@ export class NavComponent implements OnInit {
     return this.router.navigate([OUR_ROUTES.footer])
   }
 
+  get navigateToHeroSection(){
+    return this.router.navigate([OUR_ROUTES.heroSection])
+  }
 
+  get navigateToTeamSection(){
+    return this.router.navigate([OUR_ROUTES.teamSection])
+  }
 
 }

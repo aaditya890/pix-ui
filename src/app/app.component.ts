@@ -17,7 +17,7 @@ import { NavComponent } from "./nav/nav.component";
 })
 
 export class AppComponent implements OnInit {
-  
+
   ngOnInit(): void {}
 
   isMenuVisible: boolean = false;

@@ -1,55 +1,276 @@
 <main>
-  <!-- UI Block 1 -->
-  <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
-    <p class="relative top-4 text-lg font-mono">Form with all buttons</p>
-    <button (click)="showCode('block1')" class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
-      Code 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
-      </svg>
-    </button>
-  </div>
-
-  <!-- Component Showcase Block -->
-  <div id="block1-showcase" class="bg-white text-gray-900 border border-gray-200 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
-    
-  </div>
-
-  <!-- Code Section -->
-  <div id="block1-code-section" class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
-    <div class="flex justify-between items-center mb-6">
-      <ul class="flex gap-4">
-        <li><button mat-raised-button (click)="toggleCode('block1', 'html-code')">HTML</button></li>
-        <li><button mat-raised-button (click)="toggleCode('block1', 'js-code')">JavaScript</button></li>
-        <li><button mat-raised-button (click)="toggleCode('block1', 'script-code')">Script</button></li>
-      </ul>
+    <!-- UI Block 1 -->
+    <div class="flex justify-between mx-auto w-full px-2 mt-3 p-1 lg:flex-row flex-col space-y-2">
+      <p class="relative top-4 text-lg font-mono">1.Footer with flexed titles and svg logo</p>
+      <button (click)="showCode('hero1')"
+        class="border border-gray-500 duration-150 w-24 font-medium text-center flex gap-x-2 text-sm text-zinc-50 bg-[#212121] hover:bg-zinc-800 rounded-lg w-50 shadow-sm px-3 py-2">
+        Code
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          aria-hidden="true" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+        </svg>
+      </button>
     </div>
+  
+    <!-- Component Showcase Block -->
+    <div id="hero1-showcase" class="text-gray-900 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <section>
+          
+      </section>
+    </div>
+  
+    <!-- Code Section -->
+    <div id="hero1-code-section"
+      class="hidden bg-gray-800 text-white border border-gray-500 rounded-lg p-4 shadow-lg w-full mx-auto mb-4 fade-in">
+      <div class="flex justify-between items-center mb-6">
+        <ul class="flex gap-4">
+          <li><button mat-raised-button (click)="toggleCode('hero1', 'html-code')">HTML</button></li>
+          <li><button mat-raised-button (click)="toggleCode('hero1', 'js-code')">JavaScript</button></li>
+          <li><button mat-raised-button (click)="toggleCode('hero1', 'script-code')">Script</button></li>
+        </ul>
+      </div>
+  
+      <section id="code-box">
+        <div id="hero1-html-code">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-bold">HTML Code</h3>
+            <button (click)="copyCode('hero1-html-code-text')"
+              class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+          </div>
+          <pre id="hero1-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner">
+            <code>
+                
+            </code>
+          </pre>
+        </div>
+  
+        <div id="hero1-js-code" class="hidden overflow-x-auto">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-bold">JavaScript Code</h3>
+            <button (click)="copyCode('hero1-js-code-text')"
+              class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+          </div>
+          <pre id="hero1-js-code-text"
+            class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>No Js Required</code></pre>
+        </div>
+  
+        <div id="hero1-script-code" class="hidden overflow-x-auto">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-bold">Script Code</h3>
+            <button (click)="copyCode('hero1-script-code-text')"
+              class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+          </div>
+          <pre id="hero1-script-code-text"
+            class="bg-gray-900 overflow-x-auto text-gray-200 pt-4 rounded-lg shadow-inner">
+            <code>
+              &lt;script src=&quot;https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries&quot;&gt;&lt;/script&gt;
+            </code>
+          </pre>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <section id="code-box">
-      <div id="block1-html-code">
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="text-lg font-bold">HTML Code</h3>
-          <button (click)="copyCode('block1-html-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
+ <span class="text-sm sm:text-center">© 2024 <a href="#" class="hover:underline">PixUi™</a> All Rights Reserved.
+        </span>
+
+
+<div class="flex items-center justify-center min-h-screen bg-white">
+    <div class="flex flex-col">
+        <div class="flex flex-col mt-8">
+            <!-- Meet the Team -->
+            <div class="container max-w-7xl px-4">
+                <!-- Section Header -->
+                <div class="flex flex-wrap justify-center text-center mb-24">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <!-- Header -->
+                        <h1 class="text-gray-900 text-4xl font-bold mb-8">
+                            Meet the Team
+                        </h1>
+
+                        <!-- Description -->
+                        <p class="text-gray-700 text-lg font-light">
+                            With over 100 years of combined experience, we've got a well-seasoned team at the helm.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Members -->
+                <div class="flex flex-wrap">
+                    <!-- Member #1 -->
+                    <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                        <div class="flex flex-col">
+                            <!-- Avatar -->
+                            <a href="#" class="mx-auto">
+                                <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                    src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80">
+                            </a>
+
+                            <!-- Details -->
+                            <div class="text-center mt-6">
+                                <!-- Name -->
+                                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                    Tranter Jaskulski
+                                </h1>
+
+                                <!-- Title -->
+                                <div class="text-gray-700 font-light mb-2">
+                                    Founder & Specialist
+                                </div>
+
+                                <!-- Social Icons -->
+                                <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300">
+                                    <!-- Linkedin -->
+                                    <a href="#" class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
+                                        <i class="mdi mdi-linkedin text-indigo-500 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
+                                        <i class="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="#" class="flex rounded-full hover:bg-orange-50 h-10 w-10">
+                                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member #2 -->
+                    <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                        <div class="flex flex-col">
+                            <!-- Avatar -->
+                            <a href="#" class="mx-auto">
+                                <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                    src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80">
+                            </a>
+
+                            <!-- Details -->
+                            <div class="text-center mt-6">
+                                <!-- Name -->
+                                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                    Denice Jagna
+                                </h1>
+
+                                <!-- Title -->
+                                <div class="text-gray-700 font-light mb-2">
+                                    Tired & M. Specialist
+                                </div>
+
+                                <!-- Social Icons -->
+                                <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300">
+                                    <!-- Linkedin -->
+                                    <a href="#" class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
+                                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
+                                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="#" class="flex rounded-full hover:bg-orange-50 h-10 w-10">
+                                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member #3 -->
+                    <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                        <div class="flex flex-col">
+                            <!-- Avatar -->
+                            <a href="#" class="mx-auto">
+                                <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                    src="https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80">
+                            </a>
+
+                            <!-- Details -->
+                            <div class="text-center mt-6">
+                                <!-- Name -->
+                                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                    Kenji Milton
+                                </h1>
+
+                                <!-- Title -->
+                                <div class="text-gray-700 font-light mb-2">
+                                    Team Memeber
+                                </div>
+
+                                <!-- Social Icons -->
+                                <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300">
+                                    <!-- Linkedin -->
+                                    <a href="#" class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
+                                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
+                                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="#" class="flex rounded-full hover:bg-orange-50 h-10 w-10">
+                                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member #4 -->
+                    <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                        <div class="flex flex-col">
+                            <!-- Avatar -->
+                            <a href="#" class="mx-auto">
+                                <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                    src="https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80">
+                            </a>
+
+                            <!-- Details -->
+                            <div class="text-center mt-6">
+                                <!-- Name -->
+                                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                                    Doesn't matter
+                                </h1>
+
+                                <!-- Title -->
+                                <div class="text-gray-700 font-light mb-2">
+                                    Will be fired
+                                </div>
+
+                                <!-- Social Icons -->
+                                <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                transition-opacity duration-300">
+                                    <!-- Linkedin -->
+                                    <a href="#" class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
+                                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
+                                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="#" class="flex rounded-full hover:bg-orange-50 h-10 w-10">
+                                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <pre id="block1-html-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>&lt;div class=&quot;...&quot;&gt;HTML hhhish ins nsd jbjd sdjsnd  Code Here&lt;div&gt;</code></pre>
-      </div>
-    
-      <div id="block1-js-code" class="hidden overflow-x-auto">
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="text-lg font-bold">JavaScript Code</h3>
-          <button (click)="copyCode('block1-js-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
-        </div>
-        <pre id="block1-js-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>JavaScript Code Here</code></pre>
-      </div>
-    
-      <div id="block1-script-code" class="hidden overflow-x-auto">
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="text-lg font-bold">Script Code</h3>
-          <button (click)="copyCode('block1-script-code-text')" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">Copy</button>
-        </div>
-        <pre id="block1-script-code-text" class="bg-gray-900 overflow-x-auto text-gray-200 p-4 rounded-lg shadow-inner"><code>console.log('Script Code Here');</code></pre>
-      </div>
-    </section>
-    
-  </div>
-</main>
+    </div>
+</div>
